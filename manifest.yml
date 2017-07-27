@@ -1,0 +1,8 @@
+applications: - path: .   
+memory: 256M
+instances: 1
+domain: mybluemix.net
+name: Meetings Note Taker by Watson
+host: Meetings-Note-Taker-by-Watson
+disk_quota: 1024M   services:
+- Speech to Text-kv
