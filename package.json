@@ -4,7 +4,11 @@
   "description": "A sample browser app for Bluemix that use the speech-to-text service, fetching a token via Node.js",
   "repository": {
     "type": "git",
+<<<<<<< HEAD
     "url": "https://github.com/julianamariemorales/speech-to-text-nodejs.git"
+=======
+    "url": "https://github.com/watson-developer-cloud/speech-to-text-nodejs.git"
+>>>>>>> refs/remotes/origin/master
   },
   "engines": {
     "node": ">=6.0",

@@ -10,6 +10,7 @@ cache:
   - node_modules
 env:
   global:
+<<<<<<< HEAD
   - CF_APP=Meetings-Note-Taker-by-Watson
   - CF_API=https://api.ng.bluemix.net
   - CF_ORGANIZATION=moralej@ph.ibm.com
@@ -23,5 +24,20 @@ deploy:
   on:
     branch: master
     repo: julianamariemorales/speech-to-text-nodejs
+=======
+  - CF_APP=speech-to-text-demo
+  - CF_API=https://api.ng.bluemix.net
+  - CF_ORGANIZATION=WatsonPlatformServices
+  - CF_SPACE=demos
+before_deploy: npm install -g https://github.com/germanattanasio/cf-blue-green
+deploy:
+  skip_cleanup: true
+  provider: script
+  script:
+  - cf-blue-green-travis
+  on:
+    branch: master
+    repo: watson-developer-cloud/speech-to-text-nodejs
+>>>>>>> refs/remotes/origin/master
 notifications:
   email: false
